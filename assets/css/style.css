@@ -60,21 +60,6 @@ button:hover {
     color: #dffe00;
 }
 
-h2 {
-    width: 100%;
-    color: #dffe00;
-    text-align: center;
-    font-size: 300%;
-}
-
-#name {
-    width:fit-content;
-}
-
-#box {
-    width:fit-content;
-}
-
 #start {
     width:fit-content;
 }
@@ -84,12 +69,5 @@ h2 {
     margin: 0 auto;
 }
 
-#username {
-    border-radius: 5px;
-    margin-bottom: 10px;
-    width:300px;
-    height: 30px;
-    opacity: 0.4;
-    border: 2px solid #dffe00;
-}
+
 
