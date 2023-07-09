@@ -53,6 +53,7 @@ button {
     font-weight: 600;
     font-size: 120%;
     cursor: pointer;
+    transition: all 0.3s;
 }
 
 button:hover {
@@ -69,5 +70,43 @@ button:hover {
     margin: 0 auto;
 }
 
+.question-area {
+    height: 500px;
+    width: 500px;
+    background-color: #ffff;
+    opacity: 0.9;
+    margin: 0 auto;
+    margin-top: 60px;
+    border: 2px solid #dffe00;
+    border-radius: 20px;
+    padding: 30px;
+    color: #0c192c;
+}
 
+.title {
+    border-bottom: 1px solid #0c192c;
+    padding-bottom: 30px;
+    font-size: 25px;
+}
 
+.quiz {
+    padding: 20px 0;
+}
+
+#question {
+    font-size: 20px;
+}
+
+.btn {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    text-align: left;
+}
+
+#next-btn {
+    width: 150px;
+    padding: 10px;
+    margin: 20px auto 0;
+    display: none;
+}
