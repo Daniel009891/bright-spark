@@ -46,23 +46,23 @@ The background image has been chosen to highight the spark element of the title 
 
 ### Colour Scheme
 
-The colour scheme for the website is minimilistic to enable all users to read the text without any posibility of clashing with backgrounds. A light grey background has been used on the home page, this has also been used on the footer element. The classic grey colour is contemporary and is regularly used with similar websites of this nature.
+The colour scheme for the website is minimilistic to enable all users to read the text without any posibility of clashing with backgrounds. Yellow text contrasts with the blue elements of the background image to allow the text to be read easily. All buttons also take advantage of this, having the same contrasting colours which invert using the hover feature in CSS.
 
-The background colour for the homepage is light Grey rgba(211, 211, 211, 0.493) with transparency applied. This allows the colour to remain subtle and not create a negative contrast. The colour of texts for the main contents is black to ensure sufficient contrast for accessibility. The navigation bar has a background colour of white #FFFFFF with contrasting font in Black. Black is used for the social media icons in the footer, and slate Grey #708090 is used for dividing borders within the website.
+The colour for the headings and general text is Chartreuse hex #dffe00, when text is used on a button the colour is Trapped darkness hex #0c192c with a background of Chartreuse hex #dffe00. A hover feature enables these to invert to create a further contrast and alert the user of a button. 
 
 ### Typography
 
-There is only one font used in the website and it is imported from [Google Fonts](https://fonts.google.com/). Lato was picked due to its contemporary feel, this compliments the topic beautifully as IPA is seen as a more modern contempoarary topic.
+There is only one font used in the website and it is imported from [Google Fonts](https://fonts.google.com/). Shadows Into Light was picked due to its exiting and upbeat feel, this compliments the topic beautifully as electricity and sparks are often represented this way.
 
 ## Features
 
 ### Existing Features
 
-#### Navigation Bar
+#### Start button and h1 element
 
-Featured on all three HTML pages, the fully responsive navigation bar includes the logo which links back to the main page. There are also 3 individual navigation links (Home, Contact, Free Beer). This allows the user to easily navigate to their desired page without having to use the "back" button each time.
+Featured on the first HTML page, the start button allows the user to be linked to the start of the quiz, the h1 element shows the user the name of the website.
 
-#### Navigation bar for screen sizes <350px
+#### Start button for screen sizes <350px
 
 ![Navigation bar less than 350px](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/navigation-bar-small.png)
 
