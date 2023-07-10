@@ -62,25 +62,26 @@ There is only one font used in the website and it is imported from [Google Fonts
 
 Featured on the first HTML page, the start button allows the user to be linked to the start of the quiz, the h1 element shows the user the name of the website.
 
-#### Start button for screen sizes <350px
+#### Start button and h1 for screen sizes <350px
 
-![Navigation bar less than 350px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-mobile.png)
+![Start button and h1 less than 350px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-mobile.png)
 
 At 350px the heading text will stack in such a way that it will fit the screen nicely but not obstruct the start button. The start button keeps the same distance between the heading and itself. 
 
-#### Navigation bar for screen sizes >950px
+#### Start button and h1 for screen sizes >1100px
 
-![Navigation bar less than 950px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-desktop.png)
+![Start button and h1 less than 1100px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-desktop.png)
 
-When hovered over, the text displays an underline to show it is a button. When clicked the underline will be permenant, denoting which page the user is currently on.
+at 1100px the h1 element and start button will fill the screen area without stacking text on top of each other. The start button will mainitain an equal distance from the heading element to avoid looking cluttered.  
 
-#### The hero Image
 
-All three pages includes a hero image of a selection of IPAs, this has been chosen to engage with the user as its relevant to the nature of the website. The hero image changes with the media queries to enable a smoother resonse.
+#### The Quiz page
 
-##### Greater than 1200px
+The second HTML page dislays the actual quiz, this consists of a h2 element, a h3 element, 4 answer buttons and a next button. 
 
-![Hero image at greater than 1200px](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/hero-image-large.png)
+##### Greater than 1100px
+
+![Quiz page at greater than 1100px]()
 
 ##### Less than 1200px
 
