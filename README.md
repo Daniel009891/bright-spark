@@ -209,7 +209,7 @@ To make a copy or "fork" the original repository to view or make changes without
 
 ### Codes
 
-* The question layout and function ideas were inspired by the [tackoverflow.com] (https://stackoverflow.com/questions/75996907/trying-to-implement-a-scoring-system-to-a-web-based-trivia-game) forum submission.
+* The question layout and function ideas were inspired by the [stackoverflow.com](https://stackoverflow.com/questions/75996907/trying-to-implement-a-scoring-system-to-a-web-based-trivia-game) forum submission.
 
 * The container method was inspired by [linuxhint.com](https://linuxhint.com/how-to-make-html-container-box-in-html/#b1).
 
