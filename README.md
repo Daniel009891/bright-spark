@@ -64,13 +64,13 @@ Featured on the first HTML page, the start button allows the user to be linked t
 
 #### Start button for screen sizes <350px
 
-![Navigation bar less than 350px](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/navigation-bar-small.png)
+![Navigation bar less than 350px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-mobile.png)
 
-At 350px the text in the nav will change colour to light grey, this is due to the hero image changing. The light grey provides a better contrast for this background. When hovering over the navigation links, the text displays an underline and the cursor turns to a finger point, this enables the user to tell which link they are hovering over, and indicates that it is a button. When a link is pressed, the underline will stay permenantly on so as to show which page the user is currently looking at.
+At 350px the heading text will stack in such a way that it will fit the screen nicely but not obstruct the start button. The start button keeps the same distance between the heading and itself. 
 
 #### Navigation bar for screen sizes >950px
 
-![Navigation bar less than 950px](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/navigation-bar-medium.png)
+![Navigation bar less than 950px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-desktop.png)
 
 When hovered over, the text displays an underline to show it is a button. When clicked the underline will be permenant, denoting which page the user is currently on.
 
