@@ -121,27 +121,19 @@ The website was tested with Lighthouse in the Dev Tools for performance, accessi
 
 ##### Results for index.html for desktop
 
-![Image showing results for index.html on desktop](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/home-page-lighthouse-desktop.png)
+![Image showing results for index.html on desktop](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-lighthouse-desktop-start-page.png)
 
 ##### Results for index.html for mobile
 
-![Image showing results for index.html on mobile](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/home-page-lighthouse-mobile.png)
+![Image showing results for index.html on mobile](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-lighthouse-mobile-start-page.png)
 
-##### Results for contact.html for desktop
+##### Results for quiz.html for desktop
 
-![Image showing results for contact.html on desktop](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/contact-page-lighthouse-desktop.png)
+![Image showing results for quiz.html on desktop](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-lighthouse-desktop-quiz-page.pngg)
 
-##### Results for contact.html for mobile
+##### Results for quiz.html for mobile
 
-![Image showing results for contact.html on mobile](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/contact-page-lighthouse-mobile.png)
-
-##### Results for form.html for desktop
-
-![Image showing results for form.html on desktop](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/form-page-lighthouse-desktop.png)
-
-##### Results for form.html for mobile
-
-![Image showing results for form.html on mobile](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/form-page-lighthouse-mobile.png)
+![Image showing results for quiz.html on mobile](https://github.com/Daniel009891/bright-spark/blob/main/documentation/bright-spark-lighthouse-mobile-quiz-page.png)
 
 ### Brower Compatibility
 
@@ -154,10 +146,8 @@ Appearance, functionality and responsiveness of the website were tested with the
 As part of this testing, the following were tested and no issues were found:
 
 * All internal links function as expected.
-* All external links function as expected and they open in new tabs.
 * All features function as expected.
-* The form inputs validated - empty fields are not allowed and only correct email address format is accepted.
-* Responsiveness to different screen sizes - images, iframes, font sizes, margins, and overall spacing.
+* Responsiveness to different screen sizes - font sizes, margins, buttons and overall spacing.
 
 The website was also manually tested on iPhone 12 pro, samsung galaxy tab e and HP pavillion laptop for the above. No issues were found.
 
@@ -173,9 +163,9 @@ Responsiveness design tests were executed using [Chrome Dev Tools](https://devel
 
 ### Resolved Bugs
 
-*A bug was fixed where in google chrome, when the media query was applied to the homepage th e iframe for the video element was creating a white space down the right hand side of the page vertically. It was found to be an issue with the size and padding of the iframe pushing the browser out creating a horizontal scroll bar. I resized the iframe and reduced the padding to stop this happening.
+* A bug was fixed where the questions and answers were not displayed in the quiz area, this was found to be a grammatical error in the element id for answer buttons and questions id.
 
-*When testing the layout initially the footer  element was floating in the middle section of the page, I researched how to change this as normall CSS styling didnt help. I found that adding a flex box pushed the fotter into position and lept it at the bottom of the page in its desired location. 
+* 
 
 ### Unresolved Bug
 
@@ -184,7 +174,7 @@ Responsiveness design tests were executed using [Chrome Dev Tools](https://devel
 ## Deployment
 
 The website has been deployed to GitHub pages.
-The live link can be found here - [Appreciate IPA](https://daniel009891.github.io/appreciate-ipa/)
+The live link can be found here - [Bright Spark](https://daniel009891.github.io/bright-spark/)
 
 ### Deploying a GitHub Repository to GitHub Pages
 
@@ -216,16 +206,15 @@ To make a copy or "fork" the original repository to view or make changes without
 ### Media
 
 * Images used were sourced from [shutterstock.com](https://www.shutterstock.com/).
-* Video for about IPA was sourced from [youtube.com](https://www.youtube.com/).
-* The map used on the contact page was sourced from [Google Maps](https://app.grammarly.com/).
 
 ### Codes
 
-* The nav element and media query sizes were inspired by the[Love Running](https://github.com/Daniel009891/love-running) project.
-* The flex box was inspired by [Kiranworkspace.com](https://kiranworkspace.com/how-to-stick-footer-to-bottom-of-page/) to aid with the footer position.
+* The question layout and function ideas were inspired by the [tackoverflow.com] (https://stackoverflow.com/questions/75996907/trying-to-implement-a-scoring-system-to-a-web-based-trivia-game) forum submission.
+
+* The container method was inspired by [linuxhint.com](https://linuxhint.com/how-to-make-html-container-box-in-html/#b1).
 
 ## Acknowledgements
 
 This website was created as a portfolio 1 project for the Full Stack Software Development course at [Code Institute](https://codeinstitute.net/ie/). I would like to thank my mentor, [Harry Dhillon](https://github.com/Harry-Leepz), for the guidance and encouragement given throughout the project. Following his valuable feedback and advice, the website has been refined to be more intuitive and it has improved the overall user experience.
 
-I would also like to thank the slack community at Code institute, the issues with styling and positioning have been rectified mostly by searching the same issues on slack. This has proven an invaluable tool for myself.
+I would also like to thank the slack community at Code institute, the issues with functions have been rectified mostly by searching the same issues on slack. This has proven an invaluable tool for myself.
