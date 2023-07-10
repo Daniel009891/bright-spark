@@ -8,18 +8,17 @@
 
 body {
     font-family: 'Shadows Into Light', sans-serif;
-    min-height: 100vh;
     background: #0c192c;
+    height: max-content;
 }
 
 .container {
     position: relative;
     width: 100%;
-    height: 100vh;
+    height: 800px;
     overflow: hidden;
-    background: url('../images/2560x1600-5417749-light-trail-night-dusk-trello-orange-blue-long-exposure-light-red-fire-bright-dark-silhouette-landscape-sky-exposure-spark-firework-night-sky-png-images.jpg') no-repeat center center;
+    background: url('../images/spark-background.jpg') no-repeat center center;
 }
-
 
 .start-button {
     margin: 0 auto;
@@ -27,6 +26,7 @@ body {
     height: 600px;
     padding-top: 200px;
 }
+
 .container, .start-button, .bright{
     
     margin: 0 auto;
@@ -56,9 +56,13 @@ button {
     transition: all 0.3s;
 }
 
-button:hover {
+button:hover:not([disabled]) {
     background-color: #0c192c;
     color: #dffe00;
+}
+
+button:disabled {
+    cursor: no-drop;
 }
 
 #start {
@@ -71,7 +75,7 @@ button:hover {
 }
 
 .question-area {
-    height: 500px;
+    height: 550px;
     width: 500px;
     background-color: #ffff;
     opacity: 0.9;
@@ -109,4 +113,12 @@ button:hover {
     padding: 10px;
     margin: 20px auto 0;
     display: none;
+}
+
+.correct {
+    background: #9aeabc;
+}
+ 
+.incorrect {
+    background: #ff9393;
 }
