@@ -5,7 +5,9 @@ Welcome to Bright Spark. This is a website that focusses on electrical questions
 
 The users of this website will take part in a mini quiz to test their knowledge of electrical regulations, with a score baing displayed at the end to give feedback on how many correct answers were achieved.
 
-![Responsive view of Appreciate IPA on all devices]()
+![Responsive view of Bright Spark start page on all devices](documentation/start-page-responsive-mockup.png)
+
+![Responsive view of Bright Spark quiz page on all devices](documentation/quiz-page-responsive-mockup.png)
 
 ## Live Website
 
