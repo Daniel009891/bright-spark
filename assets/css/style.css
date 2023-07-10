@@ -6,6 +6,8 @@
     box-sizing: border-box;
 }
 
+/* start page and generic styling */
+
 body {
     font-family: 'Shadows Into Light', sans-serif;
     background: #0c192c;
@@ -74,6 +76,8 @@ button:disabled {
     margin: 0 auto;
 }
 
+/* quiz page  */
+
 .question-area {
     height: 550px;
     width: 500px;
@@ -123,6 +127,10 @@ button:disabled {
     background: #ff9393;
 }
 
+/* Media Query */
+
+/* For larger to medium screens 1100px wide and down */
+
 @media screen and (max-width: 1100px) {
     h1 {
         font-size: 200%;
@@ -135,6 +143,9 @@ button:disabled {
         padding-top: 300px;
     }
 }
+
+/* For medium screen sizes from 700px wide and down */
+
 @media screen and (max-width: 700px) {
     h1 {
         font-size: 180%;
@@ -151,12 +162,16 @@ button:disabled {
     }
 }
 
+/* For small screen sizes from 450px wide and down */
+
 @media screen and (max-width: 450px) {
     .question-area {
         height: 600px;
         width: 300px;
     }
 }
+
+/* For small screen sizes from 350px wide and down */
 
 @media screen and (max-width: 350px) {
     #start {

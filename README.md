@@ -163,13 +163,11 @@ Responsiveness design tests were executed using [Chrome Dev Tools](https://devel
 
 ### Resolved Bugs
 
-* A bug was fixed where the questions and answers were not displayed in the quiz area, this was found to be a grammatical error in the element id for answer buttons and questions id.
-
-* 
+* A bug was fixed where the questions and answers were not displayed in the quiz area, this was found to be a grammatical error in the element id for answer buttons and questions id in the script.js.
 
 ### Unresolved Bug
 
-* There are no known unresolved bugs within the website.
+* Unfortunately i cannot get the favicon icon working, so this is an unresolved bug.
 
 ## Deployment
 
