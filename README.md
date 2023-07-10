@@ -91,15 +91,15 @@ At less than 450px the quiz area is condensed, the answer buttons are made small
 
 ### Features Left to Implement
 
-* 
+* I would like to add a countdown timer for each question, this would create a more competetive quiz as users would need to think fast before selecting an answer.
 
-* 
+* I would also like to add a create account feature, so users can store their scores against theirr login details.
 
 ## Technologies Used
 
 * The website was created with [HTML](https://html.spec.whatwg.org/).
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) was used to add styling to the website.
-* [JavaScript]
+* [JavaScript](https://en.wikipedia.org/wiki/JavaScript) was used to create the quiz functionality.
 * [Codeanywhere](https://codeanywhere.com/) was used to create, edit and preview the codes.
 * [Git](https://git-scm.com/) was used for version control and tracked changes in the codes.
 * [GitHub](https://github.com/) was used to store the codes and deploy the website.
@@ -107,17 +107,13 @@ At less than 450px the quiz area is condensed, the answer buttons are made small
 * The website was fully validated using [W3C HTML Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/).
 * [Am I responsive?](https://ui.dev/amiresponsive) was used to generate the mockup image showing the website on various screen sizes.
 * The fonts used in the website are imported from [Google Fonts](https://fonts.google.com/).
-* The website uses icons from [Font Awesome](https://fontawesome.com/).
 * [Shutterstock](https://www.shutterstock.com/) was used to source royalty free images.
-* The website uses icons from [Font Awesome](https://fontawesome.com/).
-* [YouTube](https://app.grammarly.com/) was used to embed an informative video withn the website.
-* A map was embedded in the website using [Google Maps](https://app.grammarly.com/)
 
 ## Testing
 
 ### Code Validation
 
-The website was fully validated to ensure there were no syntax errors. The official [W3C HTML Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) were used for the validation and no errors were found. One warning is showing for all three HTML pages as a section has been used for the hero image without a heading element, this is minor and does not effevt any functionality.
+The website was fully validated to ensure there were no syntax errors. The official [W3C HTML Validator](https://validator.w3.org/) and [W3C CSS Validator](https://jigsaw.w3.org/css-validator/) were used for the validation and no errors were found. [JSHint](https://jshint.com/) was used to ensure no errors were found within the JavaScript. 15 warnings were detected but these relate to some syntaxes only being available in ES6. 
 
 ### Lighthouse
 
