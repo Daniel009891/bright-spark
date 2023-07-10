@@ -1,11 +1,11 @@
 
-# Appreciate IPA
+# Bright Spark
 
-Welcome to Appreciate IPA. This is a website that focusses on Indian Pale Ale (IPA) and provides information about IPA for people who may not be familiar with it.
+Welcome to Bright Spark. This is a website that focusses on electrical questions in the form of a mini quiz to refresh knowledge for trained electricians or apprentices.
 
-The users of this website will become familiar with what IPA is, the different types of IPA and the history surrounding it. Users will also be informed of the IPA festival location and date, with the opportunity to sign up to a monthly newsletter.
+The users of this website will take part in a mini quiz to test their knowledge of electrical regulations, with a score baing displayed at the end to give feedback on how many correct answers were achieved.
 
-![Responsive view of Appreciate IPA on all devices](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/website-responsive-views.png)
+![Responsive view of Appreciate IPA on all devices]()
 
 ## Live Website
 
