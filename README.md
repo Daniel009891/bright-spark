@@ -11,11 +11,11 @@ The users of this website will take part in a mini quiz to test their knowledge 
 
 ## Live Website
 
-[Appreciate IPA](https://daniel009891.github.io/appreciate-ipa/index.html)
+[Bright Spark](https://daniel009891.github.io/bright-spark/)
 
 ## Repository
 
-[Repository Link](https://github.com/Daniel009891/appreciate-ipa)
+[Repository Link](https://github.com/Daniel009891/bright-spark)
 
 ## UX: User Experience
 
@@ -23,32 +23,26 @@ The users of this website will take part in a mini quiz to test their knowledge 
 
 As a user,
 
-* I would like the website to be visually appealing and give me an understanding of IPA.
+* I would like the website to be visually appealing.
 * I would like to be able to navigate easily through the website.
-* I would like to understand what IPA is and its history.
-* I would like to be able to learn more about IPA and the different types.
-* I would like to find out about future events on the website.
-* I would like to be able to ask questions or provide feedback.
+* I would like to test my knowledge with an interactive quiz.
+* I would like to be able to recieve feedback on correct and incorrect answers.
 
 ### Initial Concept
 
-The initial concept was to create a website that would both inform existing fans of IPA and help new people understand the history, popularity and types of IPA. As well as keep members updated on all craft beer related news through the medium of a newsletter.
+The initial concept was to create a website that features a simple interactive quiz for the purpose of testing existing electrical knowledge. 
 
 ### Website Structure
 
-Appreciate IPA consists of three HTML pages. The layout of the website is simple and consistent. A navigation bar at the top makes switching through the pages easy and effortless.
+Bright Spark consists of two HTML pages. The layout of the website is simple and consistent. A start button on the first html page makes it simple and easy for the user to start the quiz.
 
-The main page is the default landing page, the second and third pages are easily accessible by clicking on the links in the navigation bar. Each page is broken up so that relevant information for that page is easily found.
+The second page consists of the Javascript quiz which offers feedback on correct and incorrect answers throughout with the aid of colors to denote these. Green shows a correct answer and red shows an incorrect answer.
 
-In addition to the navigation bar, The logo is linked to the top of the each page to redirect the user back to the home page.
-
-The website is fully responsive to different screen sizes and the layout adapts and changes as the screen sizes decrease. This was found to be the best option to keep a clear and concise website. Iframes and images change size as the screen sizes get smaller, so as to not disform the layout. The hero image spans the full length of the webpage and changes with the relevant screen sizes.
+The website is fully responsive to different screen sizes and the layout adapts and changes as the screen sizes decrease. This was found to be the best option to keep a clear and concise website. Headings and buttons change size as the screen sizes get smaller, so as to not disform the layout. 
 
 ### Imagery
 
-The images have been chosen to highlight craft beer and IPA, to show a sense of culture and fun. The images are integral to the website as they give meaning to the topic at hand.
-
-Detailed alt attribute are included for each image to describe the image for the ease of screen readers. The intention for this is to improve accessibility so that the images will deliver the same effect for all users.
+The background image has been chosen to highight the spark element of the title and allows a good contrast for headings and buttons.
 
 ### Colour Scheme
 
