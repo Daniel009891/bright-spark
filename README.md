@@ -81,80 +81,25 @@ The second HTML page dislays the actual quiz, this consists of a h2 element, a h
 
 ##### Greater than 1100px
 
-![Quiz page at greater than 1100px]()
+![Quiz page at greater than 1100px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/quiz-page-desktop.png)
 
-##### Less than 1200px
+##### less than 450px
 
-![Hero image at less than 1200px](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/hero-image-medium.png)
+![Hero image at less than 350px](https://github.com/Daniel009891/bright-spark/blob/main/documentation/quiz-page-mobile.png)
 
-##### less than 350px
-
-![Hero image at less than 350px](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/hero-image-small.png)
-
-### Home page
-
-#### About us
-
-This section provides a brief description about the website and its volunteers.
-
-![About us section](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/about-us-section.png)
-
-#### IPA.. whats all the fuss about?
-
-This section includes an imbedded video which describes what IPA is, the history behind it and the various types of IPA.
-
-![IPA whats all the fuss about section](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/ipa-whats-all-the-fuss-about-section.png)
-
-### Contact page
-
-The contact page includes a section detailing contact information if the user requires any further info on the topic of IPA. There is also opening times for the office listed so the user will not be dissapointed by ringing and not getting an answer. A heading is provided to give information on the annual IPA festival and how to book tickets.
-
-##### Contact details
-
-![Contact details section](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/contact-information.png)
-
-A second section provides the user with the location and date of the annual IPA festival.
-
-##### IPA festival details
-
-![IPA festival details](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/ipa-festival-location.png)
-
-#### Form page
-
-The form page is made up of three fieldsets designed to collect useful data from the user. The user will also be signed up to a monthly newsletter once the form is submitted. The form has required elements in all three fieldsets to ensure blank or half filled forms cannot be submitted. Name and email text inputs have been added to the first fieldset with an age dropdown menu showing six age ranges.
-
-![Personal details fieldset](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/personal-details-fieldset.png)
-
-The second fieldset is made up of 9 radio buttons which work as intended, the user will only be able to select one option.
-
-![Favourite IPA radio fieldset](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/radio-button-fieldset.png)
-
-The third fieldset is a text area for the user to give feedback on where they heard about the website. Having a competition linked to the completion of the form will encourage more users to fill in their details and submit, these details can be used for marketing purposes in the future.
-
-![Feedback fieldset](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/feedback-fieldset.png)
-
-At the end of the form there are two buttons, submit and reset form. When hovered over the text changes colour from white to black to indicate it is a button. The submit button send the data off if all fields are filled out correctly. The reset button allows the user to clear the whole form, in case of any mistakes.
-
-![Submit and reset buttons](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/form-buttons.png)
-
-![Submit and reset buttons hover](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/form-buttons-hover.png)
-
-#### Footer
-
-The footer section includes links to the social media sites, the links open in a new tab to allow easy navigation for the user. The footer is available on all three HTML pages.
-
-![Footer social media icons and links](https://github.com/Daniel009891/appreciate-ipa/blob/main/documentation/footer.png)
+At less than 450px the quiz area is condensed, the answer buttons are made smaller and the heading text is stacked to accomodate the smaller area. The space between the answer buttons is maintained. 
 
 ### Features Left to Implement
 
-* The navigation bar is currently still three seperate links when the screen size is below 350px. I would like to add a hamburger drop down menu to fit the screen better and give a positive experience at this resolution.
+* 
 
-* I would like to incorporate a chatbot popup to give FAQs and standard answers for the user.Once ive learned Python hopefully i can achieve this.
+* 
 
 ## Technologies Used
 
 * The website was created with [HTML](https://html.spec.whatwg.org/).
 * [CSS](https://www.w3.org/Style/CSS/Overview.en.html) was used to add styling to the website.
+* [JavaScript]
 * [Codeanywhere](https://codeanywhere.com/) was used to create, edit and preview the codes.
 * [Git](https://git-scm.com/) was used for version control and tracked changes in the codes.
 * [GitHub](https://github.com/) was used to store the codes and deploy the website.
