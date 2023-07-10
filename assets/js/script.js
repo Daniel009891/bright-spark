@@ -69,7 +69,6 @@ function showQuestion() {
     });
 }
 
-
 function resetState() {
     nextButton.style.display = "none";
     while (answerButtons.firstChild) {
@@ -110,7 +109,6 @@ function handleNextButton() {
         showScore();
     }
 }
-
 
 nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
