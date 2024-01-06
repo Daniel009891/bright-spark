@@ -56,6 +56,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
+const timer = document.getElementById("timer");
 
 /**
  * sets the question index and score to 0.
@@ -63,6 +64,7 @@ const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+let timeValue = 15;
 
 /**
  * The start quiz function.
@@ -163,6 +165,13 @@ function handleNextButton() {
         showQuestion();
     } else {
         showScore();
+    }
+}
+
+function startTimer(time){
+    counter = setInterval(timer, 1000);
+    function timer(){
+        console.log("timer displays")
     }
 }
 
