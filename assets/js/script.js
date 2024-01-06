@@ -56,7 +56,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-const timer = document.getElementById("timer");
+// const timer = document.getElementById("timer");
 
 /**
  * sets the question index and score to 0.
@@ -104,7 +104,7 @@ function showQuestion() {
         button.addEventListener("click", selectAnswer);
     });
 
-    startTimer();
+    
 }
 
 /**
@@ -175,20 +175,28 @@ function startTimer(){
     timer = setInterval(function() {
         document.getElementById('timer').innerHTML = startTime
         startTime--;
-        if (startTime <= 10) {
+        if (startTime <= 9) {
             document.getElementById('timer').style.color = "#ffbf00"
+            console.log('amber')
+
         }
 
-        if (startTime <= 5) {
+        if (startTime <= 4) {
             document.getElementById('timer').style.color = "#ff0000"
+            console.log('red')
         }
 
-        if (startTime <= 0) {
+        if (startTime === 0) {
             clearInterval(timer)
-            classList.add("incorrect");
+            console.log('wrong')
+            
         }
+
+        
 
     }, 1000);
+
+    
 }
 
 
