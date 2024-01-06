@@ -8,12 +8,33 @@
     <meta name="keywords" content="Bright Spark, Electrical quiz, knoledge test, electrical trainee">
     <!-- favicon, not currently working -->
     <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
-    <!-- css style sheet -->
+    <!-- css style sheets -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Bright Spark</title>
 </head>
 <body>
     <!-- Container box for main heading and start button -->
+    
+    <!-- Modal -->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+        aria-labelledby="staticBackdropLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Modal title</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    ...
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="bright">
             <h1>Are You A Bright Spark?</h1>
@@ -21,9 +42,26 @@
         <div class="start-button">   
             <span id="start"><button onclick ="window.location.href= 'quiz.html'" type="submit" id="btn-start"> Start Quiz</button>
             </span>
+            <!-- Button trigger modal -->
+            <span class="rules-button">
+                <button type="button" class="btn btn-primary btn-small" id= "rules" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                    Launch static backdrop modal
+                </button>
+            </span>
         </div>
     </div>
-    <!-- javascript file -->
+    <!-- javascript files -->
     <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script>
+        var myModal = document.getElementById('staticBackdrop');
+        var myInput = document.getElementById('ModalInput');
+
+        myModal.addEventListener('shown.bs.modal', function () {
+        ModalInput.focus();
+})
+    </script>
 </body>
 </html>
