@@ -1,3 +1,14 @@
+// Hello.
+//
+// This is JSHint, a tool that helps to detect errors and potential
+// problems in your JavaScript code.
+//
+// To start, simply enter some JavaScript anywhere on this page. Your
+// report will appear on the right side.
+//
+// Additionally, you can toggle specific options in the Configure
+// menu.
+
 /**
  * The question variables and answers for the main quiz.
  */
@@ -89,6 +100,7 @@ function startQuiz() {
 
 function showQuestion() {
     resetState();
+    startTimer();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -100,11 +112,12 @@ function showQuestion() {
         answerButtons.appendChild(button);
         if (answer.correct) {
             button.dataset.correct = answer.correct;
+
         }
         button.addEventListener("click", selectAnswer);
     });
 
-    
+
 }
 
 /**
@@ -131,8 +144,11 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
+        stopTimer();
+
     } else {
         selectedBtn.classList.add("incorrect");
+        stopTimer();
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
@@ -141,6 +157,7 @@ function selectAnswer(e) {
         button.disabled = true;
     });
     nextButton.style.display = "block";
+
 }
 
 /**
@@ -170,34 +187,45 @@ function handleNextButton() {
     }
 }
 
-function startTimer(){
-    var startTime= 15;
-    timer = setInterval(function() {
-        document.getElementById('timer').innerHTML = startTime
+
+
+// custom javascript for resubmission
+
+function startTimer() {
+    var startTime = 15;
+    let timer = setInterval(function () {
+        document.getElementById('timer').innerHTML = startTime;
         startTime--;
         if (startTime <= 9) {
-            document.getElementById('timer').style.color = "#ffbf00"
-            console.log('amber')
+            document.getElementById('timer').style.color = "#ffbf00";
+            console.log('amber');
 
         }
 
         if (startTime <= 4) {
-            document.getElementById('timer').style.color = "#ff0000"
-            console.log('red')
+            document.getElementById('timer').style.color = "#ff0000";
+            console.log('red');
         }
 
-        if (startTime === 0) {
-            clearInterval(timer)
-            console.log('wrong')
-            
+        if (startTime <= 0) {
+            clearInterval(timer);
+
+
         }
 
-        
+
 
     }, 1000);
 
-    
 }
+
+// custom javascript for resubmission
+
+function stopTimer(timer) {
+    clearInterval(timer);
+    document.getElementById('timer').innerHTML = '';
+}
+
 
 
 /**
@@ -206,13 +234,12 @@ function startTimer(){
  * called.
  */
 
-nextButton.addEventListener("click", () => {
+nextButton.addEventListener('click', () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
         startQuiz();
     }
 });
-
 
 startQuiz();
