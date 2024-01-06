@@ -112,6 +112,10 @@ button:disabled {
     font-size: 25px;
 }
 
+#timer{
+    display:inline;
+}
+
 .quiz {
     padding: 20px 0;
 }

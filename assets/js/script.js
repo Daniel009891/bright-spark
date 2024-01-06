@@ -64,7 +64,7 @@ const timer = document.getElementById("timer");
 
 let currentQuestionIndex = 0;
 let score = 0;
-let timeValue = 15;
+
 
 /**
  * The start quiz function.
@@ -103,6 +103,8 @@ function showQuestion() {
         }
         button.addEventListener("click", selectAnswer);
     });
+
+    startTimer();
 }
 
 /**
@@ -168,12 +170,27 @@ function handleNextButton() {
     }
 }
 
-function startTimer(time){
-    counter = setInterval(timer, 1000);
-    function timer(){
-        console.log("timer displays")
-    }
+function startTimer(){
+    var startTime= 15;
+    timer = setInterval(function() {
+        document.getElementById('timer').innerHTML = startTime
+        startTime--;
+        if (startTime <= 10) {
+            document.getElementById('timer').style.color = "#ffbf00"
+        }
+
+        if (startTime <= 5) {
+            document.getElementById('timer').style.color = "#ff0000"
+        }
+
+        if (startTime <= 0) {
+            clearInterval(timer)
+            classList.add("incorrect");
+        }
+
+    }, 1000);
 }
+
 
 /**
  * checks the question index is less than question length, if so next button
