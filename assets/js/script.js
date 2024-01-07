@@ -60,7 +60,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const questionElement = document.getElementById("question");
     const answerButtons = document.getElementById("answer-buttons");
     const nextButton = document.getElementById("next-btn");
-    // const timer = document.getElementById("timer");
+    
 
     /**
      * sets the question index and score to 0.
@@ -182,6 +182,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // custom javascript for resubmission
 
+    /**
+     * Timer function for questions, gives the user 15 seconds to answer.
+     * changes numbers from green, to amber and red depending on how much
+     * time is left. Calls the handle next button function if time runs out.
+    */
     function startTimer() {
         var startTime = 15;
         timer = setInterval(function () {
@@ -203,6 +208,12 @@ document.addEventListener("DOMContentLoaded", function () {
                 console.log('red');
             }
 
+            if (startTime <= 2) {
+                document.getElementById('timer').style.color = "#ff0000";
+                shakeScreen()
+                console.log('shake');
+            }
+
             if (startTime <= -1) {
                 stopTimer()
                 handleNextButton();
@@ -215,6 +226,10 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     // custom javascript for resubmission
+
+    /**
+     * Stops the timer counting down, clears the interval of the timer.
+     */
 
     function stopTimer() {
         clearInterval(timer);
@@ -236,6 +251,21 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
+    // custom javascript for resubmission
+
+    /**
+     * Adds the class of shake to the body which handles the css foor the shake
+     * screen effect. After 3 seconds removes the shake class from the body to
+     * stop the screen shaking.
+     */
+
+    function shakeScreen() {
+        document.body.classList.add('shake');
+
+        setTimeout(function(){
+            document.body.classList.remove('shake');
+        }, 5000);
+    }
 
     startQuiz();
 
