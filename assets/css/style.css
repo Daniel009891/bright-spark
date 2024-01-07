@@ -81,6 +81,17 @@ button:disabled {
     margin: 0 auto;
 }
 
+.modal-body > ul, .btn-secondary {
+    font-size: 25px;
+}
+
+button.btn.btn-secondary {
+    text-align: center;
+}
+
+h5 {
+    font-size: 35px;
+}
 /* quiz page  */
 
 .question-area {

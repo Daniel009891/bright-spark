@@ -187,6 +187,11 @@ document.addEventListener("DOMContentLoaded", function () {
         timer = setInterval(function () {
             document.getElementById('timer').innerHTML = startTime;
             startTime--;
+            if (startTime <= 15) {
+                document.getElementById('timer').style.color = "#00d400";
+                console.log('green');
+            }
+
             if (startTime <= 9) {
                 document.getElementById('timer').style.color = "#ffbf00";
                 console.log('amber');
