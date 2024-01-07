@@ -161,6 +161,12 @@ h5 {
 
 }
 
+.exit {
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 20px;
+}
+
 /* shake effect */
 
 @keyframes shake {

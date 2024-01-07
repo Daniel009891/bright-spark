@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    
+
 
 
     /**
@@ -53,9 +53,9 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "circuit protective conductor", correct: true },
             ]
         },
-            /**
-             * Extra questions added in for resubmission.
-             */
+        /**
+         * Extra questions added in for resubmission.
+         */
         {
             question: "What ammendment of bs7671 are we currently on?",
             answers: [
@@ -112,7 +112,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const questionElement = document.getElementById("question");
     const answerButtons = document.getElementById("answer-buttons");
     const nextButton = document.getElementById("next-btn");
-    
+
 
     /**
      * sets the question index and score to 0.
@@ -120,6 +120,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let currentQuestionIndex = 0;
     let score = 0;
+    let timer;
 
 
     /**
@@ -132,7 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
         currentQuestionIndex = 0;
         score = 0;
         nextButton.innerHTML = "Next";
-        
+
 
         showQuestion();
     }
@@ -218,11 +219,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showScore() {
         resetState();
-        
+
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
         nextButton.innerHTML = "Play Again";
         nextButton.style.display = "block";
-        
+
     }
 
     /**
@@ -271,12 +272,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
             if (startTime <= 2) {
                 document.getElementById('timer').style.color = "#ff0000";
-                shakeScreen()
+                shakeScreen();
                 console.log('shake');
             }
 
             if (startTime <= -1) {
-                stopTimer()
+                stopTimer();
                 handleNextButton();
 
 
@@ -303,7 +304,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * will appear, if it is equal to question length, start quiz function will be 
      * called.
      */
-    
+
     nextButton.addEventListener("click", () => {
         if (currentQuestionIndex < questions.length) {
             handleNextButton();
@@ -323,7 +324,7 @@ document.addEventListener("DOMContentLoaded", function () {
     function shakeScreen() {
         document.body.classList.add('shake');
 
-        setTimeout(function(){
+        setTimeout(function () {
             document.body.classList.remove('shake');
         }, 5000);
     }
