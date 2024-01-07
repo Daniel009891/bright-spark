@@ -52,6 +52,58 @@ document.addEventListener("DOMContentLoaded", function () {
                 { text: "circuit prior consultant", correct: false },
                 { text: "circuit protective conductor", correct: true },
             ]
+        },
+            /**
+             * Extra questions added in for resubmission.
+             */
+        {
+            question: "What ammendment of bs7671 are we currently on?",
+            answers: [
+                { text: "Ammendment 1", correct: false },
+                { text: "Ammendment 2", correct: true },
+                { text: "Ammendment 3", correct: false },
+                { text: "Ammendment 4", correct: false },
+            ]
+        },
+
+        {
+            question: "What id the correct phase rotation of a three phase system?",
+            answers: [
+                { text: "L1, L2, L3", correct: true },
+                { text: "L1, L3, L2", correct: false },
+                { text: "L3, L2, L1", correct: false },
+                { text: "L2, L1, L3", correct: false },
+            ]
+        },
+
+        {
+            question: "What is the calculation to determine a ZS value?",
+            answers: [
+                { text: "Zs = Ze + r1+r2", correct: false },
+                { text: "Zs = R1+R2 + Zs", correct: false },
+                { text: "Zs = Ze + r2", correct: false },
+                { text: "Zs = Ze + R1+R2", correct: true },
+            ]
+        },
+
+        {
+            question: "What is the maximum Zs value of a C32A RCBO",
+            answers: [
+                { text: "0.56 ohms", correct: false },
+                { text: "7.32 ohms", correct: false },
+                { text: "1667 ohms", correct: true },
+                { text: "None of the above", correct: false },
+            ]
+        },
+
+        {
+            question: "The height of zone 2 in a bathroom is?",
+            answers: [
+                { text: "2m", correct: false },
+                { text: "3m", correct: false },
+                { text: "2.5m", correct: false },
+                { text: "None of the above", correct: true },
+            ]
         }
     ];
 
@@ -91,6 +143,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * through all questions.
      * Also displays the answer variables for each question in the form of buttons
      * inside the html.
+     * Adapted from https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js
      */
 
     function showQuestion() {
@@ -117,6 +170,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
     /**
      * Removes previous answers in order to display nest question and answers.
+     * Adapted from https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js
      */
 
     function resetState() {
@@ -131,6 +185,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * correct. if incorrect it will display class incorrect. These classes have
      * been styled with green and red backgrounds accordingly. Disables the user 
      * from selecting another answer and displays next button. increases score by 1.
+     * Adapted from https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js
      */
 
     function selectAnswer(e) {
@@ -158,6 +213,7 @@ document.addEventListener("DOMContentLoaded", function () {
     /**
      * Shows the score at the end of the quiz
      * displays 'play again' button to restart quiz
+     * Adapted from https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js
      */
 
     function showScore() {
@@ -173,6 +229,7 @@ document.addEventListener("DOMContentLoaded", function () {
      * checks the question index is less than question length, if so it will call
      * show question function. If it is equal the show score function will be called
      * and the user will see how many correct answers they scored.
+     * Adapted from https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js
      */
 
     function handleNextButton() {
