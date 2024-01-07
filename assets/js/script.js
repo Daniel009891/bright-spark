@@ -115,7 +115,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
     /**
-     * sets the question index and score to 0.
+     * sets the question index and score to 0, defines timer.
      */
 
     let currentQuestionIndex = 0;
@@ -230,7 +230,6 @@ document.addEventListener("DOMContentLoaded", function () {
      * checks the question index is less than question length, if so it will call
      * show question function. If it is equal the show score function will be called
      * and the user will see how many correct answers they scored.
-     * Adapted from https://github.com/WebDevSimplified/JavaScript-Quiz-App/blob/master/script.js
      */
 
     function handleNextButton() {
