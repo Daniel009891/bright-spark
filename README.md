@@ -1,6 +1,10 @@
 
 # Bright Spark
 
+## Resubmission additions
+
+For the resubmission i have added several JavaScript functions, imcluding a timer, stop timer and shake function for the quiz
+
 Welcome to Bright Spark. This is a website that focusses on electrical questions in the form of a mini quiz to refresh knowledge for trained electricians or apprentices.
 
 The users of this website will take part in a mini quiz to test their knowledge of electrical regulations, with a score baing displayed at the end to give feedback on how many correct answers were achieved.
