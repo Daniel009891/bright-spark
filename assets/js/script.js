@@ -1,14 +1,3 @@
-// Hello.
-//
-// This is JSHint, a tool that helps to detect errors and potential
-// problems in your JavaScript code.
-//
-// To start, simply enter some JavaScript anywhere on this page. Your
-// report will appear on the right side.
-//
-// Additionally, you can toggle specific options in the Configure
-// menu.
-
 /**
  * The question variables and answers for the main quiz.
  */
@@ -187,13 +176,11 @@ function handleNextButton() {
     }
 }
 
-
-
 // custom javascript for resubmission
 
 function startTimer() {
     var startTime = 15;
-    let timer = setInterval(function () {
+    timer = setInterval(function () {
         document.getElementById('timer').innerHTML = startTime;
         startTime--;
         if (startTime <= 9) {
@@ -208,7 +195,9 @@ function startTimer() {
         }
 
         if (startTime <= 0) {
+            stopTimer();
             clearInterval(timer);
+            handleNextButton();
 
 
         }
@@ -221,11 +210,10 @@ function startTimer() {
 
 // custom javascript for resubmission
 
-function stopTimer(timer) {
+function stopTimer() {
     clearInterval(timer);
     document.getElementById('timer').innerHTML = '';
 }
-
 
 
 /**
@@ -234,12 +222,13 @@ function stopTimer(timer) {
  * called.
  */
 
-nextButton.addEventListener('click', () => {
+nextButton.addEventListener("click", () => {
     if (currentQuestionIndex < questions.length) {
         handleNextButton();
     } else {
         startQuiz();
     }
 });
+
 
 startQuiz();
