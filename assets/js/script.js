@@ -56,7 +56,7 @@ const questions = [
 const questionElement = document.getElementById("question");
 const answerButtons = document.getElementById("answer-buttons");
 const nextButton = document.getElementById("next-btn");
-// const timer = document.getElementById("timer");
+const timer = document.getElementById("timer");
 
 /**
  * sets the question index and score to 0.
@@ -64,6 +64,7 @@ const nextButton = document.getElementById("next-btn");
 
 let currentQuestionIndex = 0;
 let score = 0;
+
 
 
 /**
@@ -89,7 +90,7 @@ function startQuiz() {
 
 function showQuestion() {
     resetState();
-    startTimer();
+    resetTimer();
     let currentQuestion = questions[currentQuestionIndex];
     let questionNo = currentQuestionIndex + 1;
     questionElement.innerHTML = questionNo + ". " + currentQuestion.question;
@@ -133,11 +134,11 @@ function selectAnswer(e) {
     if (isCorrect) {
         selectedBtn.classList.add("correct");
         score++;
-        stopTimer();
+        resetTimer();
 
     } else {
         selectedBtn.classList.add("incorrect");
-        stopTimer();
+        resetTimer();
     }
     Array.from(answerButtons.children).forEach(button => {
         if (button.dataset.correct === "true") {
@@ -179,8 +180,8 @@ function handleNextButton() {
 // custom javascript for resubmission
 
 function startTimer() {
-    var startTime = 15;
-    timer = setInterval(function () {
+    let startTime = 15;
+        function countdown () {
         document.getElementById('timer').innerHTML = startTime;
         startTime--;
         if (startTime <= 9) {
@@ -194,18 +195,16 @@ function startTimer() {
             console.log('red');
         }
 
-        if (startTime <= 0) {
+        if (startTime > 0) {
+            startTime--;
+            timer = setTimeout(countdown, 1000);
+        } else {
             stopTimer();
-            clearInterval(timer);
-            handleNextButton();
-
-
+            // selectAnswer(false); // Timeout, treat as incorrect answer
         }
 
-
-
-    }, 1000);
-
+    } 
+    countdown();
 }
 
 // custom javascript for resubmission
@@ -213,6 +212,11 @@ function startTimer() {
 function stopTimer() {
     clearInterval(timer);
     document.getElementById('timer').innerHTML = '';
+}
+
+function resetTimer() {
+    stopTimer();
+    startTimer();
 }
 
 
