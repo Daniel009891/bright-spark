@@ -222,6 +222,7 @@ h5 {
     .question-area {
         height: 600px;
         width: 300px;
+        margin-top: 20px;
     }
 }
 
