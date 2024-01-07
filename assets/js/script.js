@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // code...
+    
 
 
     /**
@@ -209,8 +209,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
             }
-
-
 
         }, 1000);
 
