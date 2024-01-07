@@ -6,6 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Bright Spark, a quiz for trainee and qualified electricians to brush up their knowledge">
     <meta name="keywords" content="Bright Spark, Electrical quiz, knoledge test, electrical trainee">
+    <!-- Eliminate favicon error in console taken from 
+    https://stackoverflow.com/questions/30693021/chrome-developer-tools-shows-favicon-404-error-in-brackets-livepreview#comment109498656_33253277 -->
+    <link rel="icon" href="data:;base64,iVBORwOKGO=" />
     
     <!-- css style -->
     <link rel="stylesheet" href="assets/css/style.css">
@@ -15,7 +18,7 @@
     <!-- Container box for quiz area questions and answer buttons -->
     <div class="container">
         <div class="question-area">
-            <h4>Time Left:</h4>
+            <h4 class="time-text" id="time_heading">Time Left:</h4>
             <span id="timer"></span>
             <h2 class="title">Are You A Bright Spark?</h2>
             <div id="quiz">

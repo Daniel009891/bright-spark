@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
         currentQuestionIndex = 0;
         score = 0;
         nextButton.innerHTML = "Next";
+        
+
         showQuestion();
     }
 
@@ -160,9 +162,11 @@ document.addEventListener("DOMContentLoaded", function () {
 
     function showScore() {
         resetState();
+        
         questionElement.innerHTML = `You scored ${score} out of ${questions.length}!`;
         nextButton.innerHTML = "Play Again";
         nextButton.style.display = "block";
+        
     }
 
     /**
