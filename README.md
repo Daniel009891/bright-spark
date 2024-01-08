@@ -1,9 +1,14 @@
-
-# Bright Spark
-
 ## Resubmission additions
 
-For the resubmission i have added several JavaScript functions, imcluding a timer, stop timer and shake function for the quiz
+For the resubmission I have added several JavaScript functions, imcluding a timer, stop timer and shake function for the quiz. These have been compiled using custom code. The existing functions have also been edited slightly to accomodate the new changes.
+
+I have eliminated the errors in the console, one error was related to the DOM trying to load an element that hadn't been defined and was part of the quiz.html. Therefore on the index.html this element didn't exist yet. I solved this by removing the the link to my script.js from the index.html so it wasn't loaded before it was needed. 
+
+The second error was related to a favicon icon that wasnt found. After deleting the icon the error persisted intermittently. I got round this by reading the forum post on [stack overflow](https://stackoverflow.com/questions/30693021/chrome-developer-tools-shows-favicon-404-error-in-brackets-livepreview#comment109498656_33253277) and implementing the sugestions.
+
+I have added comments above code that has been adapted from a tutorial and clearly defined my own code.
+
+# Bright Spark
 
 Welcome to Bright Spark. This is a website that focusses on electrical questions in the form of a mini quiz to refresh knowledge for trained electricians or apprentices.
 
